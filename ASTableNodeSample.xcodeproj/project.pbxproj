@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C7E759B215D16321F425CFB /* Pods_ASTableNodeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70F04FEA308273FCDF54A805 /* Pods_ASTableNodeSample.framework */; };
 		D03B5C9121BAD9A7003B50C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B5C9021BAD9A7003B50C1 /* AppDelegate.swift */; };
 		D03B5C9321BAD9A7003B50C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03B5C9221BAD9A7003B50C1 /* ViewController.swift */; };
 		D03B5C9621BAD9A7003B50C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03B5C9421BAD9A7003B50C1 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		70F04FEA308273FCDF54A805 /* Pods_ASTableNodeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASTableNodeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1D795A441F1133B67FC9090 /* Pods-ASTableNodeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTableNodeSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASTableNodeSample/Pods-ASTableNodeSample.debug.xcconfig"; sourceTree = "<group>"; };
 		D03B5C8D21BAD9A7003B50C1 /* ASTableNodeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASTableNodeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03B5C9021BAD9A7003B50C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D03B5C9221BAD9A7003B50C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D03B5C9721BAD9AC003B50C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03B5C9A21BAD9AC003B50C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D03B5C9C21BAD9AC003B50C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF2FE483EE9DCA98918767F /* Pods-ASTableNodeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTableNodeSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASTableNodeSample/Pods-ASTableNodeSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C7E759B215D16321F425CFB /* Pods_ASTableNodeSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42BBF041F0FBE34A90FB67AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70F04FEA308273FCDF54A805 /* Pods_ASTableNodeSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79E375DA6D3F9558784518B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1D795A441F1133B67FC9090 /* Pods-ASTableNodeSample.debug.xcconfig */,
+				ECF2FE483EE9DCA98918767F /* Pods-ASTableNodeSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D03B5C8421BAD9A7003B50C1 = {
 			isa = PBXGroup;
 			children = (
 				D03B5C8F21BAD9A7003B50C1 /* ASTableNodeSample */,
 				D03B5C8E21BAD9A7003B50C1 /* Products */,
+				79E375DA6D3F9558784518B1 /* Pods */,
+				42BBF041F0FBE34A90FB67AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D03B5C9F21BAD9AC003B50C1 /* Build configuration list for PBXNativeTarget "ASTableNodeSample" */;
 			buildPhases = (
+				AC456D7135D2DA8DDC30EE3B /* [CP] Check Pods Manifest.lock */,
 				D03B5C8921BAD9A7003B50C1 /* Sources */,
 				D03B5C8A21BAD9A7003B50C1 /* Frameworks */,
 				D03B5C8B21BAD9A7003B50C1 /* Resources */,
+				BE9E5DDFDC9EFFF2D3F05267 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC456D7135D2DA8DDC30EE3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ASTableNodeSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9E5DDFDC9EFFF2D3F05267 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ASTableNodeSample/Pods-ASTableNodeSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASTableNodeSample/Pods-ASTableNodeSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D03B5C8921BAD9A7003B50C1 /* Sources */ = {
@@ -278,6 +357,7 @@
 		};
 		D03B5CA021BAD9AC003B50C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D795A441F1133B67FC9090 /* Pods-ASTableNodeSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +375,7 @@
 		};
 		D03B5CA121BAD9AC003B50C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECF2FE483EE9DCA98918767F /* Pods-ASTableNodeSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
